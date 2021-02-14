@@ -27,56 +27,6 @@
         android:summary="@string/doze_display_summary"
         android:fragment="com.crdroid.settings.fragments.ui.DozeSettings" />
 
-    <!-- Animations
-    <Preference
-        android:key="animations"
-        android:icon="@drawable/ic_system_animation"
-        android:title="@string/animation_title"
-        android:summary="@string/animation_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.Animations" /> -->
-
-    <!-- Blur
-    <Preference
-        android:key="blur"
-        android:icon="@drawable/ic_blur"
-        android:title="@string/settings_blur_cat"
-        android:summary="@string/settings_blur_cat_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.BlurPersonalizations" /> -->
-
-    <!-- Display cutout options
-    <Preference
-        android:key="cutout_settings"
-        android:icon="@drawable/ic_cutout"
-        android:title="@string/cutout_main"
-        android:summary="@string/cutout_main_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.CutoutSettings" /> -->
-
-    <!-- Expanded Desktop
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
-        android:key="expanded_desktop_settings"
-        android:icon="@drawable/ic_expanded" /> -->
-
-    <!-- Font
-    <com.crdroid.settings.fragments.ui.FontDialogPreference
-        android:key="custom_font"
-        android:icon="@drawable/ic_font"
-        android:title="@string/font_picker_title"
-        android:persistent="false" /> -->
-
-    <!-- Full screen aspect ratio
-    <org.lineageos.internal.lineageparts.LineagePartsPreference
-        android:key="long_screen_settings"
-        android:icon="@drawable/ic_fullscreen"
-        lineage:requiresConfig="@*lineageos.platform:bool/config_haveHigherAspectRatioScreen" /> -->
-
-    <!-- Rounded Corners
-    <PreferenceScreen
-        android:key="rounded_corners"
-        android:icon="@drawable/ic_rounded_corner"
-        android:title="@string/corners_title"
-        android:summary="@string/corners_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.RoundedCorners" /> -->
-
     <!-- Smart Pixels -->
     <PreferenceScreen
         android:key="smart_pixels"
@@ -84,16 +34,6 @@
         android:title="@string/smart_pixels_title" 
         android:summary="@string/smart_pixels_summary" 
         android:fragment="com.crdroid.settings.fragments.ui.SmartPixels" />
-
-    <!-- Switch Style
-    <com.crdroid.settings.preferences.SystemSettingListPreference
-        android:key="berry_switch_style"
-        android:icon="@drawable/ic_toggle_switch"
-        android:title="@string/switch_style_title"
-        android:dialogTitle="@string/switch_style_title"
-        android:entries="@array/switch_style_entries"
-        android:entryValues="@array/switch_style_values"
-        android:defaultValue="0" /> -->
 
     <!-- Navbar Style -->
     <com.crdroid.settings.preferences.SystemSettingListPreference
@@ -123,49 +63,4 @@
         android:summary="@string/omnijaws_settings_summary"
         android:fragment="com.crdroid.settings.fragments.ui.OmniJawsSettings" />
 
-    <!-- Styles
-    <PreferenceScreen
-        android:key="style"
-        android:icon="@drawable/ic_theme_light_dark"
-        android:title="@string/style_title"
-        android:summary="@string/style_summary"
-        android:fragment="com.crdroid.settings.fragments.ui.ThemeSettings" /> -->
-
-    <!--<Preference
-        android:key="trans_porn"
-        android:icon="@drawable/ic_transparency"
-        android:title="@string/trans"
-        android:summary="@string/trans_summary"
-        android:fragment="com.crdroid.settings.fragments.TransparencyPornFragment" />
-
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="show_alarm_fullscreen"
-        android:icon="@drawable/ic_alarm_check"
-        android:title="@string/show_alarm_fullscreen_title"
-        android:summary="@string/show_alarm_fullscreen_summary"
-        android:defaultValue="false" />-->
-
-    <!-- Substratum
-    <PreferenceCategory
-        android:key="category_substratum"
-        android:title="@string/substratum_title" >
-
-        <Preference
-            android:key="substratum"
-            android:icon="@drawable/ic_themes"
-            android:title="@string/themes_title"
-            android:summary="@string/themes_summary">
-                <intent
-                    android:action="android.intent.action.MAIN"
-                    android:targetPackage="projekt.substratum"
-                    android:targetClass="projekt.substratum.LaunchActivity" />
-        </Preference>
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="force_authorize_substratum_packages"
-            android:icon="@drawable/ic_themes"
-            android:title="@string/force_authorize_substratum_packages_title"
-            android:summary="@string/force_authorize_substratum_packages_summary"
-            android:defaultValue="false"/>
-    </PreferenceCategory> -->
 </PreferenceScreen>

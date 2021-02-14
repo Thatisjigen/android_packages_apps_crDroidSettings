@@ -19,12 +19,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <!--<ListPreference
-        android:key="statusbar_battery_bar_list"
-        android:title="@string/battery_bar"
-        android:entries="@array/battery_bar_entries"
-        android:entryValues="@array/battery_bar_values" />-->
-
     <SwitchPreference
         android:key="statusbar_battery_bar"
         android:title="@string/battery_bar_title"

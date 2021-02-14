@@ -59,12 +59,6 @@
         settings:min="1"
         settings:units="@string/unit_seconds" />
 
-    <!--<lineageos.preference.LineageSecureSettingSwitchPreference
-        android:key="network_traffic_show_units"
-        android:title="@string/network_traffic_show_units"
-        android:summary="@string/network_traffic_show_units_summary"
-        android:defaultValue="true" />-->
-
     <lineageos.preference.LineageSecureSettingListPreference
         android:key="network_traffic_units"
         android:title="@string/network_traffic_units_title"

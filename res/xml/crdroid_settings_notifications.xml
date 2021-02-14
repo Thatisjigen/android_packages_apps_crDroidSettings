@@ -27,67 +27,12 @@
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" />
 
-    <!-- Statusbar Ticker
-    <Preference
-        android:key="ticker_settings"
-        android:icon="@drawable/ic_cursor"
-        android:title="@string/ticker_screen_title"
-        android:summary="@string/ticker_screen_summary"
-        android:fragment="com.crdroid.settings.fragments.notifications.Ticker"/> -->
-
-    <!-- Flashlight on Call
-    <com.crdroid.settings.preferences.SystemSettingListPreference
-        android:key="flashlight_on_call"
-        android:icon="@drawable/ic_led_on"
-        android:title="@string/flashlight_on_call_title"
-        android:entries="@array/flashlight_on_call_entries"
-        android:entryValues="@array/flashlight_on_call_values"
-        android:defaultValue="0" /> -->
-
-    <!--<PreferenceScreen
-        android:icon="@drawable/ic_power_notification"
-        android:title="@string/power_notification_title"
-        android:summary="@string/power_notification_summary">
-            <intent android:action="com.android.settings.action.POWER_NOTIF_CONTROLS" />
-    </PreferenceScreen>-->
-
-    <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="force_expanded_notifications"
-        android:icon="@drawable/ic_expanded_notification"
-        android:title="@string/force_expanded_notifications_title"
-        android:summary="@string/force_expanded_notifications_summary" />-->
-
-    <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="vibrate_on_notifications"
-        android:icon="@drawable/ic_vibrate"
-        android:title="@string/vibrate_on_notifications_title"
-        android:summary="@string/vibrate_on_notifications_summary"
-        android:defaultValue="true" />-->
-
     <com.crdroid.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
         android:summary="@string/notification_sound_vib_screen_on_summary"
         android:defaultValue="true" />
-
-    <!-- Less Notification sounds
-    <com.crdroid.settings.preferences.SystemSettingListPreference
-        android:key="mute_annoying_notifications_threshold"
-        android:icon="@drawable/ic_headsup"
-        android:title="@string/less_notification_sounds_title"
-        android:summary="@string/less_notification_sounds_summary"
-        android:entries="@array/less_notification_sounds_entries"
-        android:entryValues="@array/less_notification_sounds_values"
-        android:defaultValue="30000" /> -->
-
-    <!-- Notification guts kill app button
-    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="notification_guts_kill_app_button"
-        android:icon="@drawable/ic_kill"
-        android:title="@string/notification_guts_kill_app_button_title"
-        android:summary="@string/notification_guts_kill_app_button_summary"
-        android:defaultValue="false" /> -->
 
     <PreferenceCategory
         android:key="incall_vib_options"
@@ -131,23 +76,6 @@
             android:defaultValue="false"
             android:dependency="heads_up_notifications_enabled" />
 
-        <!--<com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="heads_up_timeout"
-            android:icon="@drawable/ic_headsup_sleep"
-            android:title="@string/heads_up_time_out_title"
-            android:entries="@array/heads_up_time_out_entries"
-            android:entryValues="@array/heads_up_time_out_values"
-            android:defaultValue="5000"
-            android:dependency="heads_up_notifications_enabled" />-->
-
-        <!--<com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="heads_up_notification_snooze"
-            android:icon="@drawable/ic_headsup_sleep"
-            android:title="@string/heads_up_snooze_title"
-            android:entries="@array/heads_up_snooze_entries"
-            android:entryValues="@array/heads_up_snooze_values"
-            android:defaultValue="0"
-            android:dependency="heads_up_notifications_enabled" />-->
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -171,35 +99,4 @@
             android:fragment="com.crdroid.settings.fragments.notifications.notificationlight.NotificationLightSettings" />
     </PreferenceCategory>
 
-    <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="disable_immersive_message"
-        android:icon="@drawable/ic_immersive_notification"
-        android:title="@string/disable_immersive_message_title"
-        android:summary="@string/disable_immersive_message_summary" />-->
-
-    <!--<PreferenceCategory
-        android:key="breathing_notifications"
-        android:title="@string/breathing_notifications_category">
-
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="missed_call_breath"
-            android:icon="@drawable/ic_missed_call"
-            android:title="@string/missed_call_breath_title"
-            android:summary="@string/missed_call_breath_summary"
-            android:persistent="false"/>
-
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="voicemail_breath"
-            android:icon="@drawable/ic_voicemail"
-            android:title="@string/voicemail_breath_title"
-            android:summary="@string/voicemail_breath_summary"
-            android:persistent="false"/>
-
-        <com.crdroid.settings.preferences.GlobalSettingSwitchPreference
-            android:key="sms_breath"
-            android:icon="@drawable/ic_sms"
-            android:title="@string/sms_breath_title"
-            android:summary="@string/sms_breath_summary"
-            android:persistent="false"/>
-    </PreferenceCategory>-->
 </PreferenceScreen>

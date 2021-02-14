@@ -26,12 +26,6 @@
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController"
         settings:keywords="@string/keywords_system_navigation" />
 
-    <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-        android:key="pixel_nav_animation"
-        android:title="@string/pixel_navbar_anim_title"
-        android:summary="@string/pixel_navbar_anim_summary"
-        android:defaultValue="true" />-->
-
     <lineageos.preference.LineageSystemSettingSwitchPreference
         android:key="navigation_bar_menu_arrow_keys"
         android:title="@string/navbar_arrow_keys_title"
@@ -51,12 +45,6 @@
         android:title="@string/navbar_invert_layout_title"
         android:summary="@string/navbar_invert_layout_summary"
         android:defaultValue="false" />
-
-    <!--<com.crdroid.settings.preferences.GlobalSettingSwitchPreference
-        android:key="show_rotation_button"
-        android:title="@string/show_rotation_button_title"
-        android:summary="@string/show_rotation_button_summary"
-        android:defaultValue="true" />-->
 
      <ListPreference
         android:key="navigation_back_long_press"

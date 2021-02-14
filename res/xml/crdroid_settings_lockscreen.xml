@@ -19,68 +19,6 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     xmlns:lineage="http://schemas.android.com/apk/res/lineageos.platform">
 
-    <!--<PreferenceCategory
-        android:key="lockscreen_shortcuts_category"
-        android:title="@string/lockscreen_shortcuts_category">
-
-        <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="lockscreen_shortcuts_longpress"
-            android:icon="@drawable/ic_format_center"
-            android:title="@string/lockscreen_shorcuts_launch_type_title"
-            android:summary="%s"
-            android:defaultValue="1"
-            android:entries="@array/lockscreen_shortcuts_launch_type_entries"
-            android:entryValues="@array/lockscreen_shortcuts_launch_type_values" />
-
-        <Preference
-            android:key="lockscreen_shortcuts"
-            android:icon="@drawable/ic_format_center"
-            android:fragment="com.crdroid.settings.fragments.lockscreen.slim.dslv.ActionListViewSettings"
-            android:summary="@string/lockscreen_shortcuts_slim_summary"
-            android:title="@string/lockscreen_shortcuts_slim_title">
-                <extra android:name="actionMode" android:value="4" />
-                <extra android:name="maxAllowedActions" android:value="20" />
-                <extra android:name="disableLongpress" android:value="true" />
-                <extra android:name="useAppPickerOnly" android:value="true" />
-        </Preference>
-
-        <Preference
-            android:title="@string/lockscreen_shortcuts_title"
-            android:icon="@drawable/ic_format_bottom"
-            android:summary="@string/lockscreen_shortcuts_summary">
-            <intent android:action="com.android.settings.action.LOCK_SCREEN_TUNER" />
-        </Preference>
-    </PreferenceCategory>-->
-
-    <!--<PreferenceCategory
-        android:key="lockscreen_clockdate_category"
-        android:title="@string/lockscreen_clockdate_category">
-
-        <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="lockscreen_clock_selection"
-            android:icon="@drawable/ic_lock_clock"
-            android:title="@string/lockscreen_clock_selection_title"
-            android:entries="@array/lockscreen_clock_selection_entries"
-            android:entryValues="@array/lockscreen_clock_selection_values"
-            android:defaultValue="1" />
-
-        <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="lock_clock_font_style"
-            android:icon="@drawable/ic_font"
-            android:title="@string/clock_font_style_title"
-            android:entries="@array/font_style_entries"
-            android:entryValues="@array/font_style_values"
-            android:defaultValue="4" />
-
-        <com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="lock_date_font_style"
-            android:icon="@drawable/ic_font"
-            android:title="@string/date_font_style_title"
-            android:entries="@array/font_style_entries"
-            android:entryValues="@array/font_style_values"
-            android:defaultValue="14" />
-    </PreferenceCategory>-->
-
     <PreferenceCategory
         android:key="lockscreen_interface_category"
         android:title="@string/lockscreen_interface_category">
@@ -122,27 +60,6 @@
             android:dependency="lockscreen_media_metadata"
             android:defaultValue="0" />
 
-         <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_clock"
-            android:icon="@drawable/ic_clock"
-            android:title="@string/hide_lockscreen_clock_title"
-            android:summary="@string/hide_lockscreen_clock_summary"
-            android:defaultValue="true" />
-
-         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_date"
-            android:icon="@drawable/ic_calendar"
-            android:title="@string/hide_lockscreen_date_title"
-            android:summary="@string/hide_lockscreen_date_summary"
-            android:defaultValue="true" />
-
-         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="hide_lockscreen_alarm"
-            android:icon="@drawable/ic_alarm"
-            android:title="@string/hide_lockscreen_alarm_title"
-            android:summary="@string/hide_lockscreen_alarm_summary"
-            android:defaultValue="true" /> -->
-
         <com.crdroid.settings.preferences.SystemSettingListPreference
             android:key="lockscreen_charging_animation_style"
             android:icon="@drawable/ic_flash_outline"
@@ -158,13 +75,6 @@
             android:summary="@string/lockscreen_battery_info_summary"
             android:defaultValue="true" />
 
-        <!--<com.crdroid.settings.preferences.SystemSettingListPreference
-            android:key="lockscreen_date_selection"
-            android:icon="@drawable/ic_calendar_range"
-            android:title="@string/lockscreen_date_selection_title"
-            android:entries="@array/lockscreen_date_selection_entries"
-            android:entryValues="@array/lockscreen_date_selection_values"
-            android:defaultValue="0" />-->
     </PreferenceCategory>
 
     <!-- FOD customization options -->
@@ -178,13 +88,6 @@
                 android:title="@string/fod_icon_picker_title"
                 android:summary="@string/fod_icon_picker_summary"
                 android:fragment="com.crdroid.settings.fragments.lockscreen.FODIconPickerFragment" />
-
-        <!--    <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-                android:key="fod_icon_wallpaper_color"
-                android:icon="@drawable/ic_wallpaper"
-                android:title="@string/fod_wallpaper_color"
-                android:summary="@string/fod_wallpaper_color_summary"
-                android:defaultValue="false" /> -->
 
             <com.crdroid.settings.preferences.SystemSettingSwitchPreference
                 android:key="fod_gesture"
@@ -230,25 +133,12 @@
         android:key="lockscreen_gestures_category"
         android:title="@string/gestures_title">
 
-        <!--<com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="face_auto_unlock"
-            android:icon="@drawable/ic_face"
-            android:title="@string/face_auto_unlock_title"
-            android:summary="@string/face_auto_unlock_summary" />-->
-
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="double_tap_sleep_lockscreen"
             android:icon="@drawable/ic_double_tap"
             android:title="@string/double_tap_sleep_anywhere_title"
             android:summary="@string/double_tap_sleep_anywhere_summary"
             android:defaultValue="true" />
-
-        <!--<SwitchPreference
-            android:key="fp_wake_and_unlock"
-            android:icon="@drawable/ic_fp"
-            android:title="@string/fp_wake_and_unlock_title"
-            android:summary="@string/fp_wake_and_unlock_summary"
-            android:persistent="false" />-->
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="fp_success_vibrate"
@@ -264,34 +154,11 @@
             android:summary="@string/fp_error_vibrate_summary"
             android:defaultValue="true" />
 
-        <!--<SwitchPreference
-            android:key="fp_unlock_keystore"
-            android:icon="@drawable/ic_fp"
-            android:title="@string/fp_unlock_keystore_title"
-            android:summary="@string/fp_unlock_keystore_summary"
-            android:persistent="false" />-->
     </PreferenceCategory>
 
     <PreferenceCategory
         android:key="lockscreen_misc_category"
         android:title="@string/lockscreen_misc_category">
-
-        <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-               android:key="lock_screen_custom_notif"
-               android:icon="@drawable/ic_counter"
-               android:title="@string/lockscreen_maxnotif_title"
-               android:summary="@string/lockscreen_maxnotif_sumary"
-               android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.CustomSeekBarPreference
-               android:key="lockscreen_max_notif_config"
-               android:icon="@drawable/ic_counter"
-               android:title="@string/lockscreen_maxnotif_config"
-               android:max="8"
-               settings:min="0"
-               settings:units=""
-               android:persistent="false"
-               android:dependency="lock_screen_custom_notif" />-->
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
                android:key="lockscreen_enable_power_menu"

@@ -68,21 +68,6 @@
         android:title="@string/crdroid_telegram_title"
         android:summary="@string/crdroid_telegram_summary" />
 
-    <!-- crDroid GooglePlus
-    <Preference
-        android:key="crdroid_google_plus"
-        android:icon="@drawable/ic_gplus"
-        android:title="@string/crdroid_google_plus_title"
-        android:summary="@string/crdroid_google_plus_summary" /> -->
-
-    <!-- crDroid Maintainers
-    <Preference
-        android:key="crdroid_maintainers"
-        android:icon="@drawable/ic_maintainers"
-        android:title="@string/maintainers_crdroid_title"
-        android:summary="@string/maintainers_crdroid_summary"
-        android:fragment="com.crdroid.settings.fragments.about.Maintainers" /> -->
-
     <!-- crDroid OTA update -->
     <Preference
         android:key="system_update_settings"

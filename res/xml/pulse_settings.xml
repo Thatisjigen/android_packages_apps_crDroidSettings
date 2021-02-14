@@ -34,12 +34,6 @@
         android:title="@string/show_ambient_pulse_title"
         android:summary="@string/show_ambient_pulse_summary"/>
 
-    <!--<Preference
-        android:key="blacklist_fragment"
-        android:fragment="com.crdroid.settings.fragments.navigation.smartnav.PulseBlacklist"
-        android:title="@string/pulse_blacklist_title"
-        android:summary="@string/pulse_blacklist_summary"/>-->
-
     <com.crdroid.settings.preferences.SecureSettingListPreference
         android:key="pulse_render_style"
         android:title="@string/pulse_render_mode_title"
@@ -64,13 +58,6 @@
         android:key="pulse_color_user"
         android:title="@string/pulse_color_user_title"
         android:defaultValue="0x92FFFFFF"/>
-
-    <!--<com.crdroid.settings.preferences.SecureSettingSeekBarPreference
-        android:key="pulse_custom_buttons_opacity"
-        android:title="@string/pulse_custom_buttons_opacity_title"
-        android:defaultValue="200"
-        android:max="255"
-        settings:min="0"/>-->
 
     <com.crdroid.settings.preferences.SecureSettingSeekBarPreference
         android:key="pulse_lavalamp_speed"
@@ -130,15 +117,6 @@
             settings:min="2"
             android:dependency="pulse_fading_bars_category"/>
 
-        <!--<com.crdroid.settings.preferences.ColorPickerPreference
-            android:key="fling_lavalamp_color_from"
-            android:title="@string/fling_lavalamp_color_from"
-            android:defaultValue="0xffff8080"/>
-
-        <com.crdroid.settings.preferences.ColorPickerPreference
-            android:key="fling_lavalamp_color_to"
-            android:title="@string/fling_lavalamp_color_to"
-            android:defaultValue="0xff8080ff"/>-->
     </PreferenceCategory>
 
     <PreferenceCategory

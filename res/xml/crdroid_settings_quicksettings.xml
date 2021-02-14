@@ -22,29 +22,6 @@
     <PreferenceCategory 
          android:title="@string/qs_tiles_category">
 
-        <!--<com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="bluetooth_qs_show_battery"
-            android:icon="@drawable/ic_bluetooth_connect"
-            android:title="@string/bluetooth_battery_title"
-            android:summary="@string/bluetooth_battery_summary"
-            android:defaultValue="true"/>
-
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_quickbar_scroll_enabled"
-            android:icon="@drawable/ic_gesture_swipe_left"
-            android:title="@string/qqs_scroll_title"
-            android:summary="@string/qqs_scroll_summary"
-            android:defaultValue="false"/>
-
-        <com.crdroid.settings.preferences.CustomSeekBarPreference
-            android:key="sysui_qqs_count_key"
-            android:icon="@drawable/ic_qs_tile"
-            android:title="@string/sysui_qqs_count_title"
-            android:max="7"
-            settings:min="1"
-            settings:units=""
-            android:persistent="false" />-->
-
         <com.crdroid.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_columns_portrait"
             android:icon="@drawable/ic_qs_tile"
@@ -102,44 +79,6 @@
             android:summary="@string/qs_bg_use_new_tint_summary"
             android:defaultValue="false" />
     </PreferenceCategory>
-
-    <!--<PreferenceCategory 
-         android:title="@string/qs_toggles_category">
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_wifi_easy_toggle"
-            android:icon="@drawable/ic_wifi"
-            android:title="@string/qs_wifi_easy_toggle_title"
-            android:summary="@string/qs_wifi_easy_toggle_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_bt_easy_toggle"
-            android:icon="@drawable/ic_bt"
-            android:title="@string/qs_bt_easy_toggle_title"
-            android:summary="@string/qs_bt_easy_toggle_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_data_advanced"
-            android:icon="@drawable/ic_data"
-            android:title="@string/qs_advanced_data_title"
-            android:summary="@string/qs_advanced_data_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_battery_easy_toggle"
-            android:icon="@drawable/ic_battery_saver"
-            android:title="@string/qs_battery_easy_toggle_title"
-            android:summary="@string/qs_battery_easy_toggle_summary"
-            android:defaultValue="false" />
-
-        <com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_location_easy_toggle"
-            android:icon="@drawable/ic_map_marker"
-            android:title="@string/qs_location_easy_toggle_title"
-            android:summary="@string/qs_location_easy_toggle_summary"
-            android:defaultValue="false" />
-    </PreferenceCategory> -->
 
     <PreferenceCategory 
          android:title="@string/qs_misc_category">
@@ -216,13 +155,6 @@
             settings:min="0"
             settings:units="" />
 
-        <!-- QS blur
-        <com.crdroid.settings.preferences.SystemSettingSwitchPreference
-            android:key="qs_background_blur"
-            android:icon="@drawable/ic_blur"
-            android:title="@string/qs_blur_title"
-            android:summary="@string/qs_blur_summary" /> -->
-
         <!-- QS clock -->
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="show_qs_clock"
@@ -258,13 +190,6 @@
 
     <PreferenceCategory 
          android:title="@string/qs_footer_category">
-
-        <!--<com.crdroid.settings.preferences.SecureSettingSwitchPreference
-            android:key="qs_show_security_footer"
-            android:icon="@drawable/ic_key"
-            android:title="@string/qs_footer_warnings_title"
-            android:summary="@string/qs_footer_warnings_summary"
-            android:defaultValue="true"/>-->
 
         <com.crdroid.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_user"
